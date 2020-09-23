@@ -29,6 +29,11 @@ button:hover {
   color: aliceblue;
 }
 
+input {
+  width: 200px;
+  height: 30px;
+}
+
 .js-value {
   margin: 20px;
   font-size: 40px;
@@ -39,4 +44,49 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding-top: 50px;
+}
+
+.task-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 100px;
+}
+
+.task-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 100px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+.task-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 100px;
+}
+
+.task-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 100px;
 }
