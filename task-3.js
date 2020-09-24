@@ -18,13 +18,13 @@ const images = [
 const portfolio = document.querySelector(".gallery");
 console.log(portfolio);
 
-for (let image of images)
-  document
-    .querySelector(".gallery")
-    .insertAdjacentHTML(
-      "afterbegin",
-      `<li><img src="${image.url}" alt="${image.alt}" width = 340 ></li>`
-    );
+let string = "";
+
+for (let image of images) {
+  string += `<li><img src="${image.url}" alt="${image.alt}" width = 340 ></li>`;
+}
+
+portfolio.insertAdjacentHTML("afterbegin", string);
 
 // const portfolioList = document.createElement("li");
 // portfolioList.classList.add("gallery_list");

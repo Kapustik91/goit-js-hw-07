@@ -4,11 +4,11 @@ const boxes = document.querySelector("#boxes");
 const number = document.querySelector("#controls input");
 console.log(number);
 
-collectionToRender.addEventListener("click", createBoxes);
+collectionToRender.addEventListener("click", getAmount);
 collectionToDestroy.addEventListener("click", destroyBoxes);
 
 function getAmount() {
-  const amount = number.value.length;
+  boxes.innerHTML = number.value;
 }
 
 function createBoxes(amount) {

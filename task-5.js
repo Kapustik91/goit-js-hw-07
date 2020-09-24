@@ -6,8 +6,12 @@ console.log(nameLabel);
 function onInputFocus() {}
 function onInputBlur() {}
 function onInputChange(event) {
-  console.log(event.currentTarget.value);
-  nameLabel.textContent = event.currentTarget.value;
+  // console.log(event.currentTarget.value);
+  if (input.value === "") {
+    nameLabel.innerHTML = "незнакомец";
+  } else {
+    nameLabel.innerHTML = input.value;
+  }
 }
 
 input.addEventListener("focus", onInputFocus);
